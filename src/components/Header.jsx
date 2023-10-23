@@ -2,6 +2,7 @@ import MenuItem from "@/components/MenuItem";
 import {AiFillHome} from "react-icons/ai";
 import {BsFillInfoCircleFill} from "react-icons/bs";
 import Link from "next/link";
+import DarkModeSwitch from "@/components/DarkModeSwitch";
 
 const Header = () => {
     return (
@@ -19,7 +20,8 @@ const Header = () => {
                     Icon={BsFillInfoCircleFill}
                 />
             </div>
-            <div className=''>
+            <div className='flex items-center space-x-5'>
+                <DarkModeSwitch/>
                 <Link href='/'>
                     <h2 className='text-2xl'>
                         <span className='fond-bold
